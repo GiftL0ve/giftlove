@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, #3affde 0%, #5b9dff 40%, #9f6bff 60%, #ff34d2 100%);
+    animation: float 6s linear infinite alternate;
+    background-size: 200% 200%;
+}
+@keyframes float {
+    from{background-position: 0 0;}
+    to{background-position: 100% 100%;}
+}
+.conteiner{
+    height: 220px;
+    width: 400px;
+    position: relative;
+    perspective: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(96, 95, 95);
+    border-radius: 20px;
+}
+.front, .back{
+    height: 220px;
+    width: 400px;
+    border-radius: 20px;
+    position: absolute;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+}
+
+.front{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeaeca;
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: #fff2e7;
+    transform: rotateX(0deg);
+}
+.back{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #63a0e6;
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: #fff2e7;
+    transform: rotateX(180deg);
+}
+.conteiner:hover .front{
+    transform: rotateX(-180deg);
+}
+.conteiner:hover .back{
+    transform: rotateX(0deg);
+}
+@media (max-width: 520px){
+    .conteiner{
+        width: 90%;
+        height: 150px;
+    }
+    .back, .front{
+        width: 100%;
+        height: 100%;
+    }
+
+}
