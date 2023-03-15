@@ -1,10 +1,48 @@
+
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height:150vh;
-    background-image: linear-gradient(to bottom right, #3affde 0%, #5b9dff 40%, #9f6bff 60%, #ff34d2 100%);
+  font-size: 100%;
+  background-image: linear-gradient(to bottom right, #3affde 0%, #5b9dff 40%, #9f6bff 60%, #ff34d2 100%);
+  background-size: 200% 200%;
+  animation: float 6s linear infinite alternate;
   }
+  @keyframes float {
+    from{background-position: 0 0;}
+    to{background-position: 100% 100%;}
+  }
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 6px;
+}
+.cabecalho-imagem {
+  height: 62px;
+  gap: 20px;
+  border-radius: 50%;
+}
+.cabecalho-menu{
+  display: flex;
+  gap: 32px;
+}
+.cabecalho-menu-item{
+  font-family: 'Sarala', sans-serif;
+  color: #fff2e7;
+  font-weight: 400;
+  font-size: 18px;
+}
+.cabecalho-menu-item:hover{
+  color: #3e89de;
+  opacity: .80;}
+main{
+  height:100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 48px;
+  border-top: 0.4px solid #fff2e7;
+}
+
   /*Create the card container*/
   .birthdayCard {
     position: relative;
@@ -242,4 +280,12 @@ body {
   
   .name {
     margin-left:150px;
+  }
+  @media (max-width: 300px){
+    .cabecalho-menu{
+        gap: 10px;
+    }
+    .cabecalho-menu-item{
+        font-size: 80%;
+    }
   }

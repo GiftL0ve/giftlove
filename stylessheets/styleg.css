@@ -2,8 +2,14 @@
 
 body{
     font-size: 100%;
-    background: linear-gradient(68.15deg,  #63a0e6 5%, #c28fa5  95%);
+    background-image: linear-gradient(to bottom right, #3affde 0%, #5b9dff 40%, #9f6bff 60%, #ff34d2 100%);
+    background-size: 200% 200%;
+    animation: float 6s linear infinite alternate;
 }
+@keyframes float {
+    from{background-position: 0 0;}
+    to{background-position: 100% 100%;}
+  }
 .cabecalho {
     display: flex;
     flex-direction: row;
@@ -33,7 +39,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 100px;
+    height: 100vh;
     margin-bottom: 48px;
     border-top: 0.4px solid #fff2e7;
 }
