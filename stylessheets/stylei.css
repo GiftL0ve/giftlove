@@ -124,24 +124,34 @@ p{
   color: #ecd6c4;
 }
 @media (max-width: 520px){
+  .conteudo{
+    padding-top: 10%;
+  }
   .conteudo-principal{
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
   }
   .conteudo-principal-escrito{
+    padding-top: 15px;
     justify-content: center;
     align-items: center;
   }
   .conteudo-principal-imagem{
-    width: 90%;
-    
+    width: 40%;
+    height: 40%;
   }
   .cabecalho-menu-item{
     font-size: 90%;
   }
   p{
     font-size: 10px;
+  }
+  h1{
+    font-size: 32px;
+  }
+  h2{
+    font-size: 12px;
   }
 }
 @media (max-width: 300px){
@@ -151,11 +161,6 @@ p{
   .cabecalho-menu-item{
       font-size: 80%;
   }
-  h1{
-    font-size: 32px;
-  }
-  h2{
-    font-size: 12px;
-  }
+  
   
 }
