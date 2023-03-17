@@ -236,7 +236,7 @@ left: 10px;
   /*Style the inside part of the card*/
   .cardInside {
     position: absolute;
-    background-image: linear-gradient(to bottom right, #9f6bff 60%);
+    background-color: #c867f5;
     width: 250px;
     height:350px;
     border-radius: 5px;
