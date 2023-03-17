@@ -1,7 +1,7 @@
 
 body {
   font-size: 100%;
-  background-image: linear-gradient(to bottom right, #3affde 0%, #5b9dff 40%, #9f6bff 60%, #ff34d2 100%);
+  background-image: linear-gradient(to bottom right, #95f4e4 0%, #93bdfb 40%, #b794f7 60%, #fa8fe3 100%);
   background-size: 200% 200%;
   animation: float 6s linear infinite alternate;
   }
@@ -66,23 +66,27 @@ main{
   .birthdayCard:hover .front-text {
     display: none;
   }
-  
-  /*pode remover se quiser deixar o desenho*/
-  .birthdayCard:hover .wrap-deco {
-    display: none;
-  }
-  /**********/
-
-  .birthdayCard:hover .wrap-decoTwo {
-    display: none;
-  }
 
   /*pode remover se quiser deixar o bolo*/
   .birthdayCard:hover .plate {
     display: none;
   }
-   /**********/
 
+   .birthdayCard:hover .wrap-deco{
+    display: none;
+  }
+  .birthdayCard:hover .wrap-deco1 {
+    display: none;
+  }
+  .birthdayCard:hover .wrap-deco2 {
+    display: none;
+  }
+  .birthdayCard:hover .wrap-decoTwo {
+    display: none;
+  }
+  .birthdayCard:hover .wrap-decoTwo2 {
+    display: none;
+  }
   /*Style the front of the card*/
   .cardFront {
     position: relative;
@@ -102,6 +106,7 @@ main{
     text-align: center;
     backface-visibility: hidden;
     font-size: 30px; 
+    
   }
   
   .happy {
@@ -118,56 +123,141 @@ main{
     font-size: 30px;
     text-align: center;
     top:163px;
+    
   }
   
   .wrap-deco {
-    margin: 100px;
-    top: -45px;
-    background-color: red;
-    height: 20px;
+    margin: 60px;
+    top: 2%;
+    right: 50%;
+    background-color: rgb(233, 57, 136);
+    height: 15px;
     transform: rotate(-45deg);
-    width: 20px;
+    width: 15px;
     position: absolute;
   }
+
   .wrap-deco:before, .wrap-deco:after {
   content: "";
-  background-color: red;
+  background-color: rgb(233, 57, 136);
   border-radius: 50%;
-  height: 20px;
+  height: 15px;
   position: absolute;
-  width: 20px;
+  width: 15px;
 }
 .wrap-deco:before {
-  top: -10px;
+  top: -7.5px;
 }
 
 .wrap-deco:after {
-  left: 10px;
+  left: 7.5px;
 }
-.wrap-decoTwo {
-  margin: 135px;
-  top: -80px;
-  background-color: red;
-  height: 20px;
+.wrap-deco1 {
+  margin: 70px;
+  top: -10%;
+  right: 20%;
+  background-color: rgb(233, 57, 136);
+  height: 15px;
   transform: rotate(-45deg);
-  width: 20px;
+  width: 15px;
   position: absolute;
 }
+
+.wrap-deco1:before, .wrap-deco1:after {
+content: "";
+background-color: rgb(233, 57, 136);
+border-radius: 50%;
+height: 15px;
+position: absolute;
+width: 15px;
+}
+.wrap-deco1:before {
+top: -7.5px;
+}
+
+.wrap-deco1:after {
+left: 7.5px;
+}
+.wrap-deco2 {
+  margin: 70px;
+  top: 20%;
+  right: 55%;
+  background-color: rgb(233, 57, 136);
+  height: 15px;
+  transform: rotate(-45deg);
+  width: 15px;
+  position: absolute;
+}
+
+.wrap-deco2:before, .wrap-deco2:after {
+content: "";
+background-color: rgb(233, 57, 136);
+border-radius: 50%;
+height: 15px;
+position: absolute;
+width: 15px;
+}
+.wrap-deco2:before {
+top: -7.5px;
+}
+
+.wrap-deco2:after {
+left: 7.5px;
+}
+.wrap-decoTwo {
+  margin: 60px;
+  top: 2%;
+  left: 50%;
+  background-color: rgb(233, 57, 136);
+  height: 15px;
+  transform: rotate(-45deg);
+  width: 15px;
+  position: absolute;
+}
+
 .wrap-decoTwo:before, .wrap-decoTwo:after {
 content: "";
-background-color: red;
+background-color: rgb(233, 57, 136);
 border-radius: 50%;
-height: 20px;
+height: 15px;
 position: absolute;
-width: 20px;
+width: 15px;
 }
 .wrap-decoTwo:before {
-top: -10px;
+top: -7.5px;
 }
 
 .wrap-decoTwo:after {
-left: 10px;
-}  
+left: 7.5px;
+}
+
+.wrap-decoTwo2 {
+margin: 70px;
+top: 20%;
+left: 55%;
+background-color: rgb(233, 57, 136);
+height: 15px;
+transform: rotate(-45deg);
+width: 15px;
+position: absolute;
+}
+
+.wrap-decoTwo2:before, .wrap-decoTwo2:after {
+content: "";
+background-color: rgb(233, 57, 136);
+border-radius: 50%;
+height: 15px;
+position: absolute;
+width: 15px;
+}
+.wrap-decoTwo2:before {
+top: -7.5px;
+}
+
+.wrap-decoTwo2:after {
+left: 7.5px;
+}
+
   .plate {
     position: absolute;
     width: 130px;
