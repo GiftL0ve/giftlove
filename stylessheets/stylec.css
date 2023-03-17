@@ -86,9 +86,10 @@ main{
   /*Style the front of the card*/
   .cardFront {
     position: relative;
-    background-color: rgb(255, 246, 246);
+    background-color: #c867f5;
     width: 250px;
     height:350px;
+    border-radius: 5px;
     overflow: hidden;
     transform-origin: left;
     box-shadow: inset 100px 20px 100px rgba(0,0,0,.13), 30px 0 50px rgba(0,0,0,0.1);
@@ -120,70 +121,53 @@ main{
   }
   
   .wrap-deco {
+    margin: 100px;
+    top: -45px;
+    background-color: red;
+    height: 20px;
+    transform: rotate(-45deg);
+    width: 20px;
     position: absolute;
-    top:-230px;
-    left:-200px;
   }
-  
-  .decorations {
-    position: absolute;
-    width: 400px;
-    height: 300px;
-    border: 3px solid #333;
-    border-radius: 50%;
-  }
-  
-  .decorations:before, .decorations:after, .decorationsTwo:before, .decorationsTwo:after, .decorationsThree:before, .decorationsThree:after {
-    content:"";
-    position: absolute;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    width:0;
-    height:0;
-  }
-  
-  .decorations:before {
-    border-top: 40px solid #f15bb5;
-    top:297px;
-    left:210px;
-    transform: rotate(-5deg);
-  }
-  
-  .decorations:after{
-    border-top: 40px solid #f4d35e;
-    top:288px;
-    left:260px;
-    transform: rotate(-17deg);
-  }
-  
-  .decorationsTwo:before {
-    border-top: 40px solid #00f5d4;
-    top:268px;
-    left:315px;
-    transform: rotate(-30deg);
-  }
-  
-  .decorationsTwo:after, .decorationsThree:after {
-    border-top: 40px solid #9b5de5;
-    top:238px;
-    left:355px;
-    transform: rotate(-40deg);
-  }
-  
-  .wrap-decoTwo {
-    transform: scaleX(-1);
-    position: absolute;
-    top:-230px;
-    left:445px; 
-  }
-  
-  .decorationsThree:before {
-    border-top: 40px solid #00bbf9;
-    top:268px;
-    left:315px;
-    transform: rotate(-30deg);
-  }
-  
+  .wrap-deco:before, .wrap-deco:after {
+  content: "";
+  background-color: red;
+  border-radius: 50%;
+  height: 20px;
+  position: absolute;
+  width: 20px;
+}
+.wrap-deco:before {
+  top: -10px;
+}
+
+.wrap-deco:after {
+  left: 10px;
+}
+.wrap-decoTwo {
+  margin: 135px;
+  top: -80px;
+  background-color: red;
+  height: 20px;
+  transform: rotate(-45deg);
+  width: 20px;
+  position: absolute;
+}
+.wrap-decoTwo:before, .wrap-decoTwo:after {
+content: "";
+background-color: red;
+border-radius: 50%;
+height: 20px;
+position: absolute;
+width: 20px;
+}
+.wrap-decoTwo:before {
+top: -10px;
+}
+
+.wrap-decoTwo:after {
+left: 10px;
+}  
   .plate {
     position: absolute;
     width: 130px;
@@ -252,9 +236,10 @@ main{
   /*Style the inside part of the card*/
   .cardInside {
     position: absolute;
-    background-color: #fff;
+    background-image: linear-gradient(to bottom right, #9f6bff 60%);
     width: 250px;
     height:350px;
+    border-radius: 5px;
     z-index:-1;
     left:0;
     top:0;
