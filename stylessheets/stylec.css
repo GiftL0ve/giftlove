@@ -86,7 +86,7 @@ main{
   /*Style the front of the card*/
   .cardFront {
     position: relative;
-    background-color: #c867f5;
+    background-color: #f9b2db;
     width: 250px;
     height:350px;
     border-radius: 5px;
