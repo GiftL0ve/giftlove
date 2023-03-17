@@ -86,7 +86,7 @@ main{
   /*Style the front of the card*/
   .cardFront {
     position: relative;
-    background-color: #f9b2db;
+    background-color: #fac1e2;
     width: 250px;
     height:350px;
     border-radius: 5px;
@@ -236,7 +236,7 @@ left: 10px;
   /*Style the inside part of the card*/
   .cardInside {
     position: absolute;
-    background-color: #c867f5;
+    background-color: #fac1e2;
     width: 250px;
     height:350px;
     border-radius: 5px;
