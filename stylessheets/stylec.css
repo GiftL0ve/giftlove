@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
 body {
   font-size: 100%;
   background-image: linear-gradient(to bottom right, #95f4e4 0%, #93bdfb 40%, #b794f7 60%, #fa8fe3 100%);
@@ -102,7 +102,9 @@ main{
   
   .happy, .toyou {
     position: relative;
-    font-family: didot;
+    font-family: 'Sarala', sans-serif;
+    color: #fff2e7;
+    font-weight: 400;
     text-align: center;
     backface-visibility: hidden;
     font-size: 30px; 
@@ -119,10 +121,12 @@ main{
   
   .bday {
     position: relative;
-    font-family: arial;
+    font-family: 'Sarala', sans-serif;
+    color: #fff2e7;
+    font-weight: 400;
     font-size: 30px;
     text-align: center;
-    top:163px;
+    top:160px;
     
   }
   
