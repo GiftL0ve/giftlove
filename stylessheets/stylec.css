@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Quicksand:wght@400;700&family=Raleway:ital,wght@0,400;1,100&family=Sarala:wght@400;700&display=swap');
 body {
   font-size: 100%;
   background-image: linear-gradient(to bottom right, #95f4e4 0%, #93bdfb 40%, #b794f7 60%, #fa8fe3 100%);
@@ -102,9 +102,9 @@ main{
   
   .happy, .toyou {
     position: relative;
-    font-family: 'Sarala', sans-serif;
+    font-family: 'Amatic SC';
     color: #fff2e7;
-    
+    font-weight: 700;
     text-align: center;
     backface-visibility: hidden;
     font-size: 30px; 
@@ -116,17 +116,17 @@ main{
   }
   
   .toyou {
-    top:110px;
+    top:130px;
   }
   
   .bday {
     position: relative;
-    font-family: 'Sarala', sans-serif;
+    font-family: 'Amatic SC';
     color: #fff2e7;
-    
+    font-weight: 700;
     font-size: 30px;
     text-align: center;
-    top:153px;
+    top: 163px;
     
   }
   
@@ -353,8 +353,9 @@ left: 7.5px;
   }
   
   p {
-    font-family: 'Brush Script MT';
-    color: #333;
+    font-family: 'Amatic SC';
+    font-weight: 400;
+    color: #fff2e7;
   }
   
   .name {
