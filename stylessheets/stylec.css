@@ -354,8 +354,9 @@ left: 7.5px;
   
   p {
     font-family: 'Amatic SC';
-    font-weight: 400;
+    font-weight: 700;
     color: #fff2e7;
+    font-size: 20px;
   }
   
   .name {
