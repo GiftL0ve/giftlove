@@ -342,25 +342,27 @@ left: 7.5px;
   
   .inside-text {
     position: relative;
-    top:-160px;
+    top:-180px;
     transform: scale(0.7);
   }
   
   .wishes {
     position: relative;
     top:-100px;
-    margin: 25px;
+    margin: 20px;
   }
   
   p {
+    position: relative;
     font-family: 'Amatic SC';
     font-weight: 700;
     color: #fff2e7;
-    font-size: 20px;
+    font-size: 16px;
+    top: -40px;;
   }
   
   .name {
-    margin-left:150px;
+    margin-left:80px;
   }
   @media (max-width: 300px){
     .cabecalho-menu{
